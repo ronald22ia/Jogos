@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10152b">
+  <title>PlayZone — Jogos grátis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">🎮</span> Play<span>Zone</span></a>
+    <div class="top-actions"><span class="online"><i></i> jogos grátis</span><button id="themeBtn" aria-label="Alternar tema">☀️</button></div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">SUA DIVERSÃO COMEÇA AQUI</span>
+        <h1>Escolha um jogo.<br><em>Comece a jogar!</em></h1>
+        <p>Uma coleção de minijogos para jogar direto no celular ou computador.</p>
+        <a class="hero-button" href="#biblioteca">Explorar jogos <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="bigpad">🎮</div><span class="float f1">⭐</span><span class="float f2">🕹️</span><span class="float f3">✨</span></div>
+    </section>
+
+    <section class="section-head" id="biblioteca">
+      <div><span class="eyebrow">BIBLIOTECA</span><h2>Todos os jogos</h2></div>
+      <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Buscar jogo..." aria-label="Buscar jogo"></div>
+    </section>
+    <nav class="filters" aria-label="Categorias">
+      <button class="filter active" data-filter="Todos">Todos</button>
+      <button class="filter" data-filter="Ação">Ação</button>
+      <button class="filter" data-filter="Clássicos">Clássicos</button>
+      <button class="filter" data-filter="Desafio">Desafio</button>
+    </nav>
+    <section class="games-grid" id="gamesGrid"></section>
+
+    <section class="tip"><span>💡</span><div><strong>Dica:</strong> os jogos funcionam direto no navegador. Não precisa instalar nada!</div></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-icon">🎮</span> Play<span>Zone</span></a><p>Feito para se divertir · 2026</p></footer>
+
+  <div class="modal" id="gameModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head"><div><span class="eyebrow">AGORA JOGANDO</span><h2 id="modalTitle">Jogo</h2></div><button class="close" id="closeModal" aria-label="Fechar">✕</button></div>
+      <div class="game-area" id="gameArea"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
